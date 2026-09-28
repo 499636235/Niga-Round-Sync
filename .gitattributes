@@ -1,3 +1,4 @@
-# Bash helpers must stay LF; core.autocrlf=true would otherwise check them out with CRLF.
-scripts/probe-move-endpoint.sh text eol=lf
-tools/webdavtest/*.go text eol=lf
+# Bash helpers and Go tooling must stay LF; core.autocrlf=true would otherwise check them
+# out with CRLF, which breaks shell scripts under Git Bash.
+*.sh text eol=lf
+*.go text eol=lf
