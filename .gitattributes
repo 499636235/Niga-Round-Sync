@@ -1,0 +1,3 @@
+# Bash helpers must stay LF; core.autocrlf=true would otherwise check them out with CRLF.
+scripts/probe-move-endpoint.sh text eol=lf
+tools/webdavtest/*.go text eol=lf
